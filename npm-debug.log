@@ -1,0 +1,57 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'https://github.com/ProximaTeam/generator-cg-angular.git' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
+4 verbose readDependencies using package.json deps
+5 verbose cache add [ 'https://github.com/ProximaTeam/generator-cg-angular.git',
+5 verbose cache add   null ]
+6 verbose cache add name=undefined spec="https://github.com/ProximaTeam/generator-cg-angular.git" args=["https://github.com/ProximaTeam/generator-cg-angular.git",null]
+7 verbose parsed url { protocol: 'https:',
+7 verbose parsed url   slashes: true,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: 'github.com',
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: 'github.com',
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: '/ProximaTeam/generator-cg-angular.git',
+7 verbose parsed url   path: '/ProximaTeam/generator-cg-angular.git',
+7 verbose parsed url   href: 'https://github.com/ProximaTeam/generator-cg-angular.git' }
+8 silly lockFile 60d8d9be-imaTeam-generator-cg-angular-git https://github.com/ProximaTeam/generator-cg-angular.git
+9 verbose lock https://github.com/ProximaTeam/generator-cg-angular.git /Users/francizidar/.npm/60d8d9be-imaTeam-generator-cg-angular-git.lock
+10 verbose addRemoteTarball [ 'https://github.com/ProximaTeam/generator-cg-angular.git',
+10 verbose addRemoteTarball   null ]
+11 info retry fetch attempt 1 at 17:04:54
+12 verbose fetch to= /tmp/npm-959-suDROWM5/github.com/ProximaTeam/generator-cg-angular.git
+13 http GET https://github.com/ProximaTeam/generator-cg-angular.git
+14 http 200 https://github.com/ProximaTeam/generator-cg-angular.git
+15 verbose tar unpack /tmp/npm-959-suDROWM5/github.com/ProximaTeam/generator-cg-angular.git
+16 silly lockFile 0ca90dbd--generator-cg-angular-git-unpack tar:///tmp/npm-959-suDROWM5/github.com/ProximaTeam/generator-cg-angular.git-unpack
+17 verbose lock tar:///tmp/npm-959-suDROWM5/github.com/ProximaTeam/generator-cg-angular.git-unpack /Users/francizidar/.npm/0ca90dbd--generator-cg-angular-git-unpack.lock
+18 silly lockFile f376942e-imaTeam-generator-cg-angular-git tar:///tmp/npm-959-suDROWM5/github.com/ProximaTeam/generator-cg-angular.git
+19 verbose lock tar:///tmp/npm-959-suDROWM5/github.com/ProximaTeam/generator-cg-angular.git /Users/francizidar/.npm/f376942e-imaTeam-generator-cg-angular-git.lock
+20 silly gunzTarPerm modes [ '755', '644' ]
+21 error not a package /tmp/npm-959-suDROWM5/github.com/ProximaTeam/generator-cg-angular.git
+22 silly lockFile 0ca90dbd--generator-cg-angular-git-unpack tar:///tmp/npm-959-suDROWM5/github.com/ProximaTeam/generator-cg-angular.git-unpack
+23 silly lockFile 0ca90dbd--generator-cg-angular-git-unpack tar:///tmp/npm-959-suDROWM5/github.com/ProximaTeam/generator-cg-angular.git-unpack
+24 silly lockFile f376942e-imaTeam-generator-cg-angular-git tar:///tmp/npm-959-suDROWM5/github.com/ProximaTeam/generator-cg-angular.git
+25 silly lockFile f376942e-imaTeam-generator-cg-angular-git tar:///tmp/npm-959-suDROWM5/github.com/ProximaTeam/generator-cg-angular.git
+26 silly lockFile 60d8d9be-imaTeam-generator-cg-angular-git https://github.com/ProximaTeam/generator-cg-angular.git
+27 silly lockFile 60d8d9be-imaTeam-generator-cg-angular-git https://github.com/ProximaTeam/generator-cg-angular.git
+28 error Error: ENOENT, open '/tmp/npm-959-suDROWM5/github.com/ProximaTeam/generator-cg-angular.git-unpack/package.json'
+29 error If you need help, you may report this *entire* log,
+29 error including the npm and node versions, at:
+29 error     <http://github.com/npm/npm/issues>
+30 error System Darwin 14.0.0
+31 error command "node" "/usr/local/bin/npm" "install" "https://github.com/ProximaTeam/generator-cg-angular.git"
+32 error cwd /Users/francizidar/Documents/projects/generators/generator-cg-angular
+33 error node -v v0.10.33
+34 error npm -v 1.4.28
+35 error path /tmp/npm-959-suDROWM5/github.com/ProximaTeam/generator-cg-angular.git-unpack/package.json
+36 error code ENOENT
+37 error errno 34
+38 verbose exit [ 34, true ]
