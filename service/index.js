@@ -29,10 +29,11 @@ ServiceGenerator.prototype.askFor = function askFor() {
 
     this.prompt(prompts, function (props) {
         if (props.name){
-            this.name = props.name;
+
+            this.name = _.camelize(_.classify(props.name)) + 'Service';
         }
         cgUtils.askForModuleAndDir('service',this,false,cb);
-    }.bind(this));     
+    }.bind(this));
 
 };
 
