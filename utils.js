@@ -89,7 +89,8 @@ exports.injectRoute = function(moduleFile,uirouter,name,route,routeUrl,that){
     routeUrl = routeUrl.replace(/\\/g,'/');
 
     if (uirouter){
-        var code = '$stateProvider.state(\''+name+'\', {\n        url: \''+route+'\',\n        templateUrl: \''+routeUrl+'\'\n    });';
+        var code = "$stateProvider.state(\'app."+name+"\', {\n        url: \'"+route+"\',\n        views:{\n            'main@':{\n                controller:\'"+_.camelize(_.classify(route))+"Ctrl\',\n                templateUrl:\'"+routeUrl+"\'\n            }\n        }\n    });"
+
         exports.addToFile(moduleFile,code,exports.STATE_MARKER);
     } else {
         exports.addToFile(moduleFile,'$routeProvider.when(\''+route+'\',{templateUrl: \''+routeUrl+'\'});',exports.ROUTE_MARKER);
