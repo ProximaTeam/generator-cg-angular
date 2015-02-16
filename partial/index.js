@@ -28,7 +28,7 @@ PartialGenerator.prototype.askFor = function askFor() {
     var prompts = [
         {
             name: 'route',
-            message: 'Enter your route url (i.e. /mypartial/:id).  If you don\'t want a route added for you, leave this empty.'
+            message: 'Enter your route url (i.e. mypartial/:id).  If you don\'t want a route added for you, leave this empty.'
         }
     ];
 
