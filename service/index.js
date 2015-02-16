@@ -30,7 +30,7 @@ ServiceGenerator.prototype.askFor = function askFor() {
     this.prompt(prompts, function (props) {
         if (props.name){
 
-            this.name = _.camelize(_.classify(props.name)) + 'Service';
+            this.name = props.name;
         }
         cgUtils.askForModuleAndDir('service',this,false,cb);
     }.bind(this));
@@ -38,6 +38,8 @@ ServiceGenerator.prototype.askFor = function askFor() {
 };
 
 ServiceGenerator.prototype.files = function files() {
+
+    this.servicename = _.camelize(_.classify(this.name)) + 'Service';
 
     cgUtils.processTemplates(this.name,this.dir,'service',this,null,null,this.module);
 
