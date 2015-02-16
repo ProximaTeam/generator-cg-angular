@@ -30,14 +30,27 @@
   <script src="app.js"></script>
   <!-- Add New Component JS Above -->
 
-  <div>
-    <div id="content" class="container">
-      <div class="row">
-        <div <%= routerViewDirective %>>
-        </div>
-      </div>
-    </div>
+
+  <div class="tooltips">
+      <!-- Full browser view -->
+      <div ui-view="cover"></div>
   </div>
+
+  <div class="wrapper">
+      <!-- Navigation -->
+      <div ui-view="nav"></div>
+      <!-- Sidebar -->
+      <div ui-view="sidebar"></div>
+
+      <div class="page-content">
+          <div class="container-fluid">
+              <!-- Main state view -->
+              <div <%= routerViewDirective %>="main"></div>
+          </div>
+      </div>
+
+  </div>
+
 
 </body>
 </html>
