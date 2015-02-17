@@ -59,7 +59,7 @@ CgangularGenerator.prototype.askForUiRouter = function askFor() {
         type:'list',
         message: 'Which router would you like to use?',
         default: 0,
-        choices: ['Standard Angular Router','Angular UI Router']
+        choices: ['Angular UI Router', 'Standard Angular Router']
     }];
 
     this.prompt(prompts, function (props) {
